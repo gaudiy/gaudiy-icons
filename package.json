@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "icons repository for https://gaudiy.com/",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
@@ -12,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/gaudiy/gaudiy-icons.git"
   },
-  "author": "",
+  "author": "Kodai Suzuki <k3dai.su3@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gaudiy/gaudiy-icons/issues"
