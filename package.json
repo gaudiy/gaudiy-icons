@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/kodai3/gaudiy-icons#readme",
   "dependencies": {
+    "clsx": "^1.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },

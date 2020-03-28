@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import * as React from 'react';
 import './styles.css';
 
@@ -13,6 +14,7 @@ interface SvgIconProps extends React.SVGProps<SVGSVGElement> {
 const SvgIcon = React.forwardRef<SVGSVGElement, SvgIconProps>((props, ref)=> {
   const {
     children,
+    className,
     viewBox = '0 0 24 24',
     fontSize = 'default',
     ...other
@@ -20,9 +22,11 @@ const SvgIcon = React.forwardRef<SVGSVGElement, SvgIconProps>((props, ref)=> {
 
   return (
     <svg
-      className={
-        `.root .fontSize${capitalize(fontSize)}`
-      }
+      className={clsx(
+        'root',
+         `fontSize${capitalize(fontSize)}`,
+        className,
+      )}
       focusable="false"
       viewBox={viewBox}
       ref={ref}
