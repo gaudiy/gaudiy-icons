@@ -1,0 +1,15 @@
+.root {
+  width: 1em;
+  height: 1em;
+  stroke: 'currentColor';
+  user-select: 'none';
+  font-size: 24px;
+}
+
+.fontSizeSmall {
+  font-size: 20px;
+}
+
+.fontSizeLarge {
+  font-size: 36px;
+}
