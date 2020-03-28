@@ -11,7 +11,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "webpack --mode production",
-    "publish:patch": "npm verion patch && npm publish dist"
+    "publish:patch": "npm version patch && npm publish dist"
   },
   "repository": {
     "type": "git",
