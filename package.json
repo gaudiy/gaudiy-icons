@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kodai3/gaudiy-icons.git"
+    "url": "git+https://github.com/gaudiy/gaudiy-icons.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kodai3/gaudiy-icons/issues"
+    "url": "https://github.com/gaudiy/gaudiy-icons/issues"
   },
-  "homepage": "https://github.com/kodai3/gaudiy-icons#readme",
+  "homepage": "https://github.com/gaudiy/gaudiy-icons#readme",
   "dependencies": {
     "clsx": "^1.1.0",
     "react": "^16.13.1",
