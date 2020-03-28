@@ -1,6 +1,6 @@
 {
   "name": "@gaudiy/icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "icons repository for https://gaudiy.com/",
   "main": "index.js",
   "publishConfig": {
@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "publish:patch": "npm verion patch && npm publish dist"
   },
   "repository": {
     "type": "git",
