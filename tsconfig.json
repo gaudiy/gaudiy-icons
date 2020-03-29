@@ -64,5 +64,11 @@
     /* Advanced Options */
     "forceConsistentCasingInFileNames": true,  /* Disallow inconsistently-cased references to the same file. */
     "jsx": "react"
-  }
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    ".storybook",
+    ".vscode",
+  ],
 }
