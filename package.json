@@ -11,7 +11,6 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "npx webpack --config webpack.config.js",
-    "prepare": "npm run build",
     "fmt": "prettier --write src/**/*.{ts,tsx}"
   },
   "repository": {
