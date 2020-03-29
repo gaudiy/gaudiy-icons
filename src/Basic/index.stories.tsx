@@ -1,16 +1,21 @@
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
+import ArrowBack from './ArrowBack';
 import AtSign from './AtSign';
 import Bell from './Bell';
 import BellOff from './BellOff';
 import Calendar from './Calendar';
 import Camera from './Camera';
+import Chat from './Chat';
 import Check from './Check';
 import CheckCircle from './CheckCircle';
 import Clock from './Clock';
+import Comment from './Comment';
 import Copy from './Copy';
 import Download from './Download';
 import Edit from './Edit';
+import Eye from './Eye';
+import EyeOff from './EyeOff';
 import Filter from './Filter';
 import Flag from './Flag';
 import Globe from './Globe';
@@ -19,6 +24,12 @@ import Home from './Home';
 import Image from './Image';
 import Link from './Link';
 import Mail from './Mail';
+import MapPin from './MapPin';
+import Menu from './Menu';
+import Minus from './Minus';
+import MoreHorizontal from './MoreHorizontal';
+import MoreVertical from './MoreVertical';
+import Plus from './Plus';
 import Replay from './Replay';
 import Search from './Search';
 import Send from './Send';
@@ -29,18 +40,7 @@ import ThumbsDown from './ThumbsDown';
 import ThumbsUp from './ThumbsUp';
 import Trash from './Trash';
 import Upload from './Upload';
-import MapPin from './MapPin'
-import Eye from './Eye'
-import EyeOff from './EyeOff'
-import X from './X'
-import Plus from './Plus'
-import Minus from './Minus'
-import Menu from './Menu'
-import Comment from './Comment'
-import Chat from './Chat'
-import MoreVertical from './MoreVertical'
-import MoreHorizontal from './MoreHorizontal'
-import ArrowBack from './ArrowBack'
+import X from './X';
 
 storiesOf('components | Basic', module)
   .addDecorator(story => (
