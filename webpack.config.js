@@ -15,7 +15,9 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'bundle.js',
+    filename: 'index.js',
+    library: '@gaudiy/icons',
+    libraryTarget: 'umd',
   },
 
   module: {
