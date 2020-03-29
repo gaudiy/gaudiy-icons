@@ -1,0 +1,22 @@
+import { SvgIconProps } from '../typings';
+
+export const ArrowDown: SvgIconProps;
+export const ArrowLeft: SvgIconProps;
+export const ArrowRight: SvgIconProps;
+export const ArrowUp: SvgIconProps;
+export const TrendingDown: SvgIconProps;
+export const TrendingUp: SvgIconProps;
+export const CornerDownLeft: SvgIconProps;
+export const CornerDownRight: SvgIconProps;
+export const CornerLeftDown: SvgIconProps;
+export const CornerRightDown: SvgIconProps;
+export const CornerRightUp: SvgIconProps;
+export const CornerUpLeft: SvgIconProps;
+export const RotateCCW: SvgIconProps;
+export const RotateCW: SvgIconProps;
+export const Repeat: SvgIconProps;
+export const RefreshCW: SvgIconProps;
+export const Minimize2: SvgIconProps;
+export const Maximize2: SvgIconProps;
+export const CornerLeftUp: SvgIconProps;
+export const CornerUpRight: SvgIconProps;
