@@ -1,0 +1,25 @@
+import { SvgIconProps } from '../typings';
+
+export const Briefcase: SvgIconProps;
+export const Feather: SvgIconProps;
+export const Grid: SvgIconProps;
+export const Hammer: SvgIconProps;
+export const Layout: SvgIconProps;
+export const Lock: SvgIconProps;
+export const Map: SvgIconProps;
+export const MinusCircle: SvgIconProps;
+export const MinusSquare: SvgIconProps;
+export const Navigation: SvgIconProps;
+export const Navigation2: SvgIconProps;
+export const Paperclip: SvgIconProps;
+export const Phone: SvgIconProps;
+export const PlusCircle: SvgIconProps;
+export const Scissors: SvgIconProps;
+export const Sidebar: SvgIconProps;
+export const ToggleLeft: SvgIconProps;
+export const ToggleRight: SvgIconProps;
+export const Tool: SvgIconProps;
+export const Unlock: SvgIconProps;
+export const XCircle: SvgIconProps;
+export const ZoomIn: SvgIconProps;
+export const ZoomOut: SvgIconProps;
