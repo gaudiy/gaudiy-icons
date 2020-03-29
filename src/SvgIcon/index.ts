@@ -1,3 +1,3 @@
-import Presenter from './Presenter'
+import Presenter from './Presenter';
 
-export default Presenter
+export default Presenter;

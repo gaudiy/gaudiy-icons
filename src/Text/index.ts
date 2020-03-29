@@ -1,4 +1,3 @@
-
 export { default as AlignCenter } from './AlignCenter';
 export { default as AlignLeft } from './AlignLeft';
 export { default as Bold } from './Bold';

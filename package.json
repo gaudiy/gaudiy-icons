@@ -11,7 +11,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "webpack --mode production",
-    "publish:patch": "npm version patch && npm publish dist"
+    "publish:patch": "npm version patch && npm publish dist",
+    "fmt": "prettier --write src/**/*.{ts,tsx}"
   },
   "repository": {
     "type": "git",

@@ -7,36 +7,24 @@ function capitalize(string: string) {
 }
 
 interface SvgIconProps extends React.SVGProps<SVGSVGElement> {
-  fontSize: 'default' | 'small' | 'large'
+  fontSize: 'default' | 'small' | 'large';
 }
 
-
-const SvgIcon = React.forwardRef<SVGSVGElement, SvgIconProps>((props, ref)=> {
-  const {
-    children,
-    className,
-    viewBox = '0 0 24 24',
-    fontSize = 'default',
-    ...other
-  } = props;
+const SvgIcon = React.forwardRef<SVGSVGElement, SvgIconProps>((props, ref) => {
+  const { children, className, viewBox = '0 0 24 24', fontSize = 'default', ...other } = props;
 
   return (
     <svg
-      className={clsx(
-        'root',
-         `fontSize${capitalize(fontSize)}`,
-        className,
-      )}
+      className={clsx('root', `fontSize${capitalize(fontSize)}`, className)}
       focusable="false"
       viewBox={viewBox}
       ref={ref}
-      fill='none'
+      fill="none"
       {...other}
     >
       {children}
     </svg>
   );
 });
-
 
 export default React.memo(SvgIcon);
