@@ -1,13 +1,10 @@
 import clsx from 'clsx';
 import * as React from 'react';
+import { SvgIconProps } from '../typings';
 import './styles.css';
 
 function capitalize(string: string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-interface SvgIconProps extends React.SVGProps<SVGSVGElement> {
-  fontSize: 'default' | 'small' | 'large';
 }
 
 const SvgIcon = React.forwardRef<SVGSVGElement, SvgIconProps>((props, ref) => {
