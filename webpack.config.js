@@ -27,8 +27,13 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: 'ts-loader',
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env', '@babel/preset-react'],
+              plugins: ['@babel/plugin-syntax-jsx'], //JSXパース用
+            },
           },
+          { loader: 'ts-loader' },
         ],
       },
       {

@@ -29,6 +29,8 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
     "@storybook/addon-actions": "^5.3.17",
     "@storybook/addon-backgrounds": "^5.3.17",
     "@storybook/addon-links": "^5.3.17",
@@ -63,6 +65,10 @@
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "prettier": {
     "semi": true,
