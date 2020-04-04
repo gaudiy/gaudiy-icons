@@ -55,24 +55,10 @@ async function typescriptCopy({ from, to }) {
   return Promise.all([...cmds, ...esms]);
 }
 
-async function cssCopy({ from, to }) {
-  if (!(await fse.exists(to))) {
-    console.warn(`path ${to} does not exists`);
-    return [];
-  }
-
-  const files = glob.sync('**/*.css', { cwd: from });
-  const cmds = files.map((file) => fse.copy(path.resolve(from, file), path.resolve(to, file)));
-  const esms = files.map((file) => fse.copy(path.resolve(from, file), path.resolve(path.join(to, 'esm'), file)));
-  return Promise.all([...cmds, ...esms]);
-}
-
 async function run() {
   try {
     // TypeScript
     await typescriptCopy({ from: srcPath, to: buildPath });
-    // CSS
-    await cssCopy({ from: srcPath, to: buildPath });
 
     await createModulePackages({ from: srcPath, to: buildPath });
   } catch (err) {

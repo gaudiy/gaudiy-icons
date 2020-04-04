@@ -9,7 +9,7 @@ const useStyles = makeStyles(() => ({
     height: '1em',
     color: 'currentColor',
     userSelect: 'none',
-    fontAize: '24px',
+    fontSize: '24px',
   },
   fontSizeSmall: {
     fontSize: '20px',
