@@ -1,9 +1,9 @@
 .storybook/
 dist/
 examples/
+node_modules/
+scripts/
 
 eslintrc.json
-package.json
-
 tsconfig.json
-webpack.config.js
+babel.config.js

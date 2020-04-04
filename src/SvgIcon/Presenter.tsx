@@ -1,4 +1,4 @@
-import { makeStyles } from '@material-ui/core/styles';
+import makeStyles from '@material-ui/styles/makeStyles';
 import clsx from 'clsx';
 import * as React from 'react';
 import { SvgIconProps } from '../typings';

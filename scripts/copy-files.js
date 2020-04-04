@@ -21,6 +21,7 @@ async function typescriptCopy({ from, to }) {
 // copy package.json to dist for publishing from dist
 function packageCopy({ to }) {
   fse.copy(path.resolve(packagePath, 'package.json'), path.resolve(to, 'package.json'));
+  fse.copy(path.resolve(packagePath, '.npmignore'), path.resolve(to, '.npmignore'));
 }
 
 async function run() {
