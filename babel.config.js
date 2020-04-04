@@ -25,5 +25,4 @@ module.exports = {
       plugins: ['babel-plugin-optimize-clsx', ['@babel/plugin-transform-runtime', { useESModules: true }]],
     },
   },
-  ignore: ['**/*.d.ts'],
 };

@@ -2,30 +2,31 @@
   "name": "@gaudiy/icons",
   "version": "1.0.5",
   "description": "icons repository for https://gaudiy.com/",
-  "main": "dist/index.js",
-  "module": "dist/esm/index.js",
-  "files": [
-    "dist/"
-  ],
+  "main": "index.js",
+  "module": "esm/index.js",
   "publishConfig": {
     "access": "public"
   },
+  "keywords": [
+    "icons"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --out-dir ./dist --extensions .ts,.tsx --config-file ./babel.config.js",
-    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --out-dir ./dist/esm --extensions .ts,.tsx --config-file ./babel.config.js",
-    "build:copy-files": " node ./scripts/copy-files.js",
-    "build": "npm run build:cjs && npm run build:esm && npm run build:copy-files",
+    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --out-dir ./dist --extensions .ts,.tsx --ignore **/*.d.ts,**/*.stories.tsx --config-file ./babel.config.js",
+    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --out-dir ./dist/esm --extensions .ts,.tsx --ignore **/*.d.ts,**/*.stories.tsx --config-file ./babel.config.js",
+    "build:copy-files": "node ./scripts/copy-files.js",
+    "build:typings": "node ./scripts/create-typings.js",
+    "build": "npm run build:cjs && npm run build:esm && npm run build:copy-files && npm run build:typings",
     "fmt": "prettier --write src/**/*.{ts,tsx}"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gaudiy/gaudiy-icons.git"
   },
-  "author": "Kodai Suzuki <k3dai.su3@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
+  "author": "Kodai Suzuki",
   "bugs": {
     "url": "https://github.com/gaudiy/gaudiy-icons/issues"
   },
