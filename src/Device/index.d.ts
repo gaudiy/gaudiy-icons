@@ -1,14 +1,14 @@
-import { SvgIconProps } from '../typings';
+import { SvgComponent } from '../typings';
 
-export const Monitor: SvgIconProps;
-export const PauseCircle: SvgIconProps;
-export const Play: SvgIconProps;
-export const PlayCircle: SvgIconProps;
-export const Power: SvgIconProps;
-export const SmartPhone: SvgIconProps;
-export const Tablet: SvgIconProps;
-export const Tv: SvgIconProps;
-export const Volume: SvgIconProps;
-export const Volume1: SvgIconProps;
-export const Volume2: SvgIconProps;
-export const VolumeX: SvgIconProps;
+export const Monitor: SvgComponent;
+export const PauseCircle: SvgComponent;
+export const Play: SvgComponent;
+export const PlayCircle: SvgComponent;
+export const Power: SvgComponent;
+export const SmartPhone: SvgComponent;
+export const Tablet: SvgComponent;
+export const Tv: SvgComponent;
+export const Volume: SvgComponent;
+export const Volume1: SvgComponent;
+export const Volume2: SvgComponent;
+export const VolumeX: SvgComponent;

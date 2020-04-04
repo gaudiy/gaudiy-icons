@@ -1,13 +1,13 @@
 import clsx from 'clsx';
 import * as React from 'react';
 import { SvgIconProps } from '../typings';
-import './styles.css';
+import './styles.scss';
 
 function capitalize(string: string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-const SvgIcon = React.forwardRef<SVGSVGElement, SvgIconProps>((props, ref) => {
+const SvgIcon = (props: SvgIconProps) => {
   const { children, className, viewBox = '0 0 24 24', fontSize = 'default', ...other } = props;
 
   return (
@@ -15,13 +15,12 @@ const SvgIcon = React.forwardRef<SVGSVGElement, SvgIconProps>((props, ref) => {
       className={clsx('root', `fontSize${capitalize(fontSize)}`, className)}
       focusable="false"
       viewBox={viewBox}
-      ref={ref}
       fill="none"
       {...other}
     >
       {children}
     </svg>
   );
-});
+};
 
 export default React.memo(SvgIcon);
