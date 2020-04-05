@@ -33,6 +33,19 @@ ${files
   return fse.writeFile(path.resolve(savePath, 'index.d.ts'), contents, 'utf8');
 }
 
+// create global index.d.ts for each folder
+function createGlobalIndexTyping(dirs, savePath) {
+  const contents = `
+${dirs
+  .map((dir) => {
+    const { name } = normalizeFileName(dir);
+    return `export * from './${name}';`;
+  })
+  .join('\n')}`;
+
+  return fse.writeFile(path.resolve(savePath, 'index.d.ts'), contents, 'utf8');
+}
+
 // Generate TypeScript.
 async function run() {
   await fse.ensureDir(buildPath);
@@ -48,7 +61,7 @@ async function run() {
   );
 
   const typings = files.map((file) => createIconTyping(file));
-  await Promise.all([...typings, dirIndexTypes, createIndexTyping(files, buildPath)]);
+  await Promise.all([...typings, dirIndexTypes, createGlobalIndexTyping(dirs, buildPath)]);
   console.log(`\u{1F5C4}  Written typings to ${chalk.dim(buildPath)}.`);
 }
 
