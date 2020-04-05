@@ -4,4 +4,4 @@ export interface SvgIconProps extends React.SVGProps<SVGSVGElement> {
   fontSize: 'default' | 'small' | 'large';
 }
 
-export type SvgComponent = React.FC<SvgIconProps>;
+export default function SvgIcon(props: SvgIconProps): JSX.Element;

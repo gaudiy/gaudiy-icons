@@ -14,14 +14,16 @@ function normalizeFileName(file) {
 // create [name].d.ts file for eveeery components
 function createIconTyping(file) {
   const { name, dir } = normalizeFileName(file);
-  const contents = `export { SvgComponent } from '../typings';`;
+  const contents = `export { default } from '../typings';`;
   return fse.writeFile(path.resolve(path.join(buildPath, dir), `${name}.d.ts`), contents, 'utf8');
 }
 
 // create index.d.ts for each folder
 function createIndexTyping(files, savePath) {
   const contents = `
-import { SvgComponent } from '../typings';
+import SvgIcon from '../typings';
+
+type SvgComponent = typeof SvgIcon;
 
 ${files
   .map((file) => {
@@ -66,4 +68,3 @@ async function run() {
 }
 
 run();
-// const dirs = glob.sync('**/', { cwd: srcPath, ignore: ['SvgIcon/', 'typings/', 'utils/'] });
