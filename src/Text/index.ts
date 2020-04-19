@@ -3,6 +3,7 @@ export { default as AlignLeft } from './AlignLeft';
 export { default as Bold } from './Bold';
 export { default as Clipboard } from './Clipboard';
 export { default as Color } from './Color';
+export { default as DollarSignType } from './DollarSign';
 export { default as Edit2 } from './Edit2';
 export { default as FileMinus } from './FileMinus';
 export { default as FilePlus } from './FilePlus';

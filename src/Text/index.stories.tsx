@@ -5,6 +5,7 @@ import AlignLeft from './AlignLeft';
 import Bold from './Bold';
 import Clipboard from './Clipboard';
 import Color from './Color';
+import DollarSign from './DollarSign';
 import Edit2 from './Edit2';
 import FileMinus from './FileMinus';
 import FilePlus from './FilePlus';
@@ -85,6 +86,16 @@ storiesOf('components | Text', module)
       <Color fontSize="small" />
       <h2>large</h2>
       <Color fontSize="large" />
+    </div>
+  ))
+  .add('DollarSign', () => (
+    <div>
+      <h3>DollarSign</h3>
+      <DollarSign />
+      <h2>small</h2>
+      <DollarSign fontSize="small" />
+      <h2>large</h2>
+      <DollarSign fontSize="large" />
     </div>
   ))
   .add('Edit2', () => (
