@@ -26,6 +26,7 @@ import Link from './Link';
 import Mail from './Mail';
 import MapPin from './MapPin';
 import Menu from './Menu';
+import MessageSquare from './MessageSquare';
 import Minus from './Minus';
 import MoreHorizontal from './MoreHorizontal';
 import MoreVertical from './MoreVertical';
@@ -392,6 +393,16 @@ storiesOf('components | Basic', module)
       <Minus fontSize="small" />
       <h2>large</h2>
       <Minus fontSize="large" />
+    </div>
+  ))
+  .add('MessageSquare', () => (
+    <div>
+      <h3>MessageSquare</h3>
+      <MessageSquare />
+      <h2>small</h2>
+      <MessageSquare fontSize="small" />
+      <h2>large</h2>
+      <MessageSquare fontSize="large" />
     </div>
   ))
   .add('Menu', () => (

@@ -8,6 +8,7 @@ import Color from './Color';
 import Edit2 from './Edit2';
 import FileMinus from './FileMinus';
 import FilePlus from './FilePlus';
+import FolderPlus from './FolderPlus';
 import Inbox from './Inbox';
 import KeyboardClose from './KeyboardClose';
 import List from './List';
@@ -144,5 +145,15 @@ storiesOf('components | Text', module)
       <List fontSize="small" />
       <h2>large</h2>
       <List fontSize="large" />
+    </div>
+  ))
+  .add('FolderPlus', () => (
+    <div>
+      <h3>FolderPlus</h3>
+      <FolderPlus />
+      <h2>small</h2>
+      <FolderPlus fontSize="small" />
+      <h2>large</h2>
+      <FolderPlus fontSize="large" />
     </div>
   ));

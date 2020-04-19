@@ -6,6 +6,7 @@ export { default as Color } from './Color';
 export { default as Edit2 } from './Edit2';
 export { default as FileMinus } from './FileMinus';
 export { default as FilePlus } from './FilePlus';
+export { default as FolderPlus } from './FolderPlus';
 export { default as Inbox } from './Inbox';
 export { default as KeyboardClose } from './KeyboardClose';
 export { default as List } from './List';

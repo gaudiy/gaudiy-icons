@@ -23,6 +23,7 @@ export { default as Link } from './Link';
 export { default as Mail } from './Mail';
 export { default as MapPin } from './MapPin';
 export { default as Menu } from './Menu';
+export { default as MessageSquare } from './MessageSquare';
 export { default as Minus } from './Minus';
 export { default as MoreVertical } from './MoreVertical';
 export { default as Plus } from './Plus';
