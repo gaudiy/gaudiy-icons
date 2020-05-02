@@ -14,6 +14,7 @@ import PointCoin from './PointCoin';
 import PointText from './PointText';
 import ShoppingBag from './ShoppingBag';
 import ShoppingCart from './ShoppingCart';
+import Wallet from './Wallet';
 import WithdrawEth from './WithdrawEth';
 import WithdrawJpy from './WithdrawJpy';
 
@@ -127,6 +128,16 @@ storiesOf('components | Market', module)
       <CreditCard fontSize="small" />
       <h2>large</h2>
       <CreditCard fontSize="large" />
+    </div>
+  ))
+  .add('Wallet', () => (
+    <div>
+      <h3>Wallet</h3>
+      <Wallet />
+      <h2>small</h2>
+      <Wallet fontSize="small" />
+      <h2>large</h2>
+      <Wallet fontSize="large" />
     </div>
   ))
   .add('PieChart', () => (

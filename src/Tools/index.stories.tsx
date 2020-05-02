@@ -1,5 +1,7 @@
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
+import Book from './Book';
+import BookOpen from './BookOpen';
 import Briefcase from './Briefcase';
 import Feather from './Feather';
 import Grid from './Grid';
@@ -206,6 +208,26 @@ storiesOf('components | Tools', module)
       <Feather fontSize="small" />
       <h2>large</h2>
       <Feather fontSize="large" />
+    </div>
+  ))
+  .add('Book', () => (
+    <div>
+      <h3>Book</h3>
+      <Book />
+      <h2>small</h2>
+      <Book fontSize="small" />
+      <h2>large</h2>
+      <Book fontSize="large" />
+    </div>
+  ))
+  .add('BookOpen', () => (
+    <div>
+      <h3>Book</h3>
+      <BookOpen />
+      <h2>small</h2>
+      <BookOpen fontSize="small" />
+      <h2>large</h2>
+      <BookOpen fontSize="large" />
     </div>
   ))
   .add('Lock', () => (

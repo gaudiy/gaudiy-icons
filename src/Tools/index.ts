@@ -1,3 +1,5 @@
+export { default as Book } from './Book';
+export { default as BookOpen } from './BookOpen';
 export { default as Briefcase } from './Briefcase';
 export { default as Feather } from './Feather';
 export { default as Grid } from './Grid';
