@@ -38,5 +38,7 @@ jobs:
         run: npm ci
 
       # deploy storybook
-      - name: deploy storybook
-        run: npm run deploy-storybook
+      - name: Deploy storybook
+        run: npm run deploy-storybook -- --ci
+        env:
+          GH_TOKEN: gaudiy:${{ secrets.GITHUB_TOKEN }}
