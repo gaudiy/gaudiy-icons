@@ -1,0 +1,23 @@
+name: Deploy to github pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubunts-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+
+      - name: install
+        run: npm ci
+
+      - name: deploy storybook
+      - run: npm run deploy-storybook
