@@ -1,9 +1,9 @@
-import makeStyles from '@material-ui/styles/makeStyles';
+import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import * as React from 'react';
 import { SvgIconProps } from '../typings';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     width: '1em',
     height: '1em',
@@ -17,23 +17,55 @@ const useStyles = makeStyles(() => ({
   fontSizeLarge: {
     fontSize: '36px',
   },
+  colorPrimary: {
+    color: theme.palette.primary.main,
+  },
+  colorSecondary: {
+    color: theme.palette.secondary.main,
+  },
+  colorSuccess: {
+    color: theme.palette.success.main,
+  },
+  colorError: {
+    color: theme.palette.error.main,
+  },
+  colorDisabled: {
+    color: theme.palette.text.disabled,
+  },
+  colorInherit: {
+    color: theme.palette.common.white,
+  },
 }));
 
 function capitalize(string: string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-const SvgIcon = (props: SvgIconProps) => {
+const SvgIcon = ({
+  children,
+  className,
+  viewBox = '0 0 24 24',
+  fontSize = 'default',
+  color = 'default',
+  ...other
+}: SvgIconProps) => {
   const classes = useStyles();
-  const { children, className, viewBox = '0 0 24 24', fontSize = 'default', ...other } = props;
 
   return (
     <svg
-      // @ts-ignore
-      className={clsx(classes.root, classes[`fontSize${capitalize(fontSize)}`], className)}
+      className={clsx(
+        classes.root,
+        {
+          // @ts-ignore
+          [classes[`fontSize${capitalize(fontSize)}`]]: fontSize !== 'default',
+          // @ts-ignore
+          [classes[`color${capitalize(color)}`]]: color !== 'default',
+        },
+        className
+      )}
+      fill="none"
       focusable="false"
       viewBox={viewBox}
-      fill="none"
       {...other}
     >
       {children}
