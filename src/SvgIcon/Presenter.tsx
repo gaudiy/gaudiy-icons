@@ -35,6 +35,12 @@ const useStyles = makeStyles((theme) => ({
   colorInherit: {
     color: theme.palette.common.white,
   },
+  colorTextPrimary: {
+    color: theme.palette.text.primary,
+  },
+  colorTextSecondary: {
+    color: theme.palette.text.secondary,
+  },
 }));
 
 function capitalize(string: string) {
