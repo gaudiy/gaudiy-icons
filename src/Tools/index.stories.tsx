@@ -16,6 +16,7 @@ import Navigation2 from './Navigation2';
 import Paperclip from './Paperclip';
 import Phone from './Phone';
 import PlusCircle from './PlusCircle';
+import Painting from './Painting';
 import Scissors from './Scissors';
 import Sidebar from './Sidebar';
 import ToggleLeft from './ToggleLeft';
@@ -188,6 +189,16 @@ storiesOf('components | Tools', module)
       <Paperclip fontSize="small" />
       <h2>large</h2>
       <Paperclip fontSize="large" />
+    </div>
+  ))
+  .add('Painting', () => (
+    <div>
+      <h3>Painting</h3>
+      <Painting />
+      <h2>small</h2>
+      <Painting fontSize="small" />
+      <h2>large</h2>
+      <Painting fontSize="large" />
     </div>
   ))
   .add('Phone', () => (

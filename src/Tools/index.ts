@@ -14,6 +14,7 @@ export { default as Navigation2 } from './Navigation2';
 export { default as Paperclip } from './Paperclip';
 export { default as Phone } from './Phone';
 export { default as PlusCircle } from './PlusCircle';
+export { default as Painting } from './Painting';
 export { default as Scissors } from './Scissors';
 export { default as Sidebar } from './Sidebar';
 export { default as ToggleLeft } from './ToggleLeft';
