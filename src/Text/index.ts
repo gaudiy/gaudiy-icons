@@ -12,4 +12,5 @@ export { default as Inbox } from './Inbox';
 export { default as KeyboardClose } from './KeyboardClose';
 export { default as List } from './List';
 export { default as Quote } from './Quote';
+export { default as Translate } from './Translate';
 export { default as Type } from './Type';
