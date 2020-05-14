@@ -14,6 +14,7 @@ import Inbox from './Inbox';
 import KeyboardClose from './KeyboardClose';
 import List from './List';
 import Quote from './Quote';
+import Translate from './Translate';
 import Type from './Type';
 
 storiesOf('components | Text', module)
@@ -26,6 +27,16 @@ storiesOf('components | Text', module)
       <Type fontSize="small" />
       <h2>large</h2>
       <Type fontSize="large" />
+    </div>
+  ))
+  .add('Translate', () => (
+    <div>
+      <h3>Type</h3>
+      <Translate />
+      <h2>small</h2>
+      <Translate fontSize="small" />
+      <h2>large</h2>
+      <Translate fontSize="large" />
     </div>
   ))
   .add('Bold', () => (
