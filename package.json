@@ -5,6 +5,9 @@
   "main": "./index.js",
   "module": "./esm/index.js",
   "typings": "./index.d.ts",
+  "engines": {
+    "node": "12.x"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -23,10 +26,7 @@
     "build": "npm run build:cjs && npm run build:esm && npm run build:copy-files && npm run build:typings",
     "fmt": "prettier --write src/**/*.{ts,tsx}"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gaudiy/gaudiy-icons.git"
-  },
+  "repository": "git+https://github.com/gaudiy/gaudiy-icons.git",
   "license": "MIT",
   "author": "Kodai Suzuki",
   "bugs": {
