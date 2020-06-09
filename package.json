@@ -1,6 +1,6 @@
 {
   "name": "@gaudiy/icons",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "icons repository for https://gaudiy.com/",
   "main": "./index.js",
   "module": "./esm/index.js",
