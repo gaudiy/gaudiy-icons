@@ -1,6 +1,7 @@
 export { default as Activity } from './Activity';
 export { default as barChart } from './BarChart';
 export { default as barChart2 } from './BarChart2';
+export { default as Coin } from './Coin';
 export { default as CreditCard } from './CreditCard';
 export { default as DepositEth } from './DepositEth';
 export { default as DepositJpy } from './DepositJpy';

@@ -3,6 +3,7 @@ import * as React from 'react';
 import Activity from './Activity';
 import BarChart from './BarChart';
 import BarChart2 from './BarChart2';
+import Coin from './Coin';
 import CreditCard from './CreditCard';
 import DepositEth from './DepositEth';
 import DepositJpy from './DepositJpy';
@@ -100,6 +101,16 @@ storiesOf('components | Market', module)
       <PointCoin fontSize="small" />
       <h2>large</h2>
       <PointCoin fontSize="large" />
+    </div>
+  ))
+  .add('Coin', () => (
+    <div>
+      <h3>Coin</h3>
+      <Coin />
+      <h2>small</h2>
+      <Coin fontSize="small" />
+      <h2>large</h2>
+      <Coin fontSize="large" />
     </div>
   ))
   .add('BarChart', () => (
