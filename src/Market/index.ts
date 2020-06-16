@@ -10,6 +10,7 @@ export { default as Jpy } from './Jpy';
 export { default as PieChart } from './PieChart';
 export { default as PointCoin } from './PointCoin';
 export { default as PointText } from './PointText';
+export { default as Shop } from './Shop';
 export { default as ShoppingBag } from './ShoppingBag';
 export { default as ShoppingCart } from './ShoppingCart';
 export { default as Wallet } from './Wallet';

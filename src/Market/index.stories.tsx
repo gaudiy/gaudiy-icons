@@ -12,6 +12,7 @@ import Jpy from './Jpy';
 import PieChart from './PieChart';
 import PointCoin from './PointCoin';
 import PointText from './PointText';
+import Shop from './Shop';
 import ShoppingBag from './ShoppingBag';
 import ShoppingCart from './ShoppingCart';
 import Wallet from './Wallet';
@@ -169,6 +170,16 @@ storiesOf('components | Market', module)
       <Activity fontSize="small" />
       <h2>large</h2>
       <Activity fontSize="large" />
+    </div>
+  ))
+  .add('Shop', () => (
+    <div>
+      <h3>Shop</h3>
+      <Shop />
+      <h2>small</h2>
+      <Shop fontSize="small" />
+      <h2>large</h2>
+      <Shop fontSize="large" />
     </div>
   ))
   .add('ShoppingCart', () => (
