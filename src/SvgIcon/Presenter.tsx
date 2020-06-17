@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
     color: 'currentColor',
     userSelect: 'none',
     fontSize: '24px',
+    strokeWidth: '1.5px',
   },
   fontSizeSmall: {
     fontSize: '20px',
