@@ -8,11 +8,10 @@ export default createSvgIcon(
       clip-rule="evenodd"
       d="M20.24 13.24C22.5844 10.8956 22.5844 7.09448 20.24 4.75004C17.8956 2.40559 14.0944 2.40559 11.75 4.75004L5 11.5V20H13.5L20.24 13.24Z"
       stroke="currentColor"
-      stroke-width="1.5"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
-    <path d="M16 9L2 23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-    <path d="M17 16H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M16 9L2 23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M17 16H9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
   </>
 );

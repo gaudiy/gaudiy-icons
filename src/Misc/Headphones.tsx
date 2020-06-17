@@ -6,7 +6,6 @@ export default createSvgIcon(
     <path
       d="M3 18V12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12V18"
       stroke="currentColor"
-      stroke-width="1.5"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
