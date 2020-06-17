@@ -7,7 +7,6 @@ export default createSvgIcon(
     clip-rule="evenodd"
     d="M5 3L19 12L5 21V3V3Z"
     stroke="currentColor"
-    stroke-width="1.5"
     stroke-linecap="round"
     stroke-linejoin="round"
   />
