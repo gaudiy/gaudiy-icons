@@ -10,6 +10,7 @@ import DepositJpy from './DepositJpy';
 import Eth from './Eth';
 import Gift from './Gift';
 import Jpy from './Jpy';
+import OneColorCoin from './OneColorCoin';
 import PieChart from './PieChart';
 import PointCoin from './PointCoin';
 import PointText from './PointText';
@@ -111,6 +112,16 @@ storiesOf('components | Market', module)
       <Coin fontSize="small" />
       <h2>large</h2>
       <Coin fontSize="large" />
+    </div>
+  ))
+  .add('OneColorCoin', () => (
+    <div>
+      <h3>OneColorCoin</h3>
+      <OneColorCoin />
+      <h2>small</h2>
+      <OneColorCoin fontSize="small" />
+      <h2>large</h2>
+      <OneColorCoin fontSize="large" />
     </div>
   ))
   .add('BarChart', () => (

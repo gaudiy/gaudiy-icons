@@ -8,6 +8,7 @@ export { default as DepositJpy } from './DepositJpy';
 export { default as Eth } from './Eth';
 export { default as Gift } from './Gift';
 export { default as Jpy } from './Jpy';
+export { default as OneColorCoin } from './OneColorCoin';
 export { default as PieChart } from './PieChart';
 export { default as PointCoin } from './PointCoin';
 export { default as PointText } from './PointText';
