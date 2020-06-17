@@ -3,15 +3,18 @@ import * as React from 'react';
 import Activity from './Activity';
 import BarChart from './BarChart';
 import BarChart2 from './BarChart2';
+import Coin from './Coin';
 import CreditCard from './CreditCard';
 import DepositEth from './DepositEth';
 import DepositJpy from './DepositJpy';
 import Eth from './Eth';
 import Gift from './Gift';
 import Jpy from './Jpy';
+import OneColorCoin from './OneColorCoin';
 import PieChart from './PieChart';
 import PointCoin from './PointCoin';
 import PointText from './PointText';
+import Shop from './Shop';
 import ShoppingBag from './ShoppingBag';
 import ShoppingCart from './ShoppingCart';
 import Wallet from './Wallet';
@@ -101,6 +104,26 @@ storiesOf('components | Market', module)
       <PointCoin fontSize="large" />
     </div>
   ))
+  .add('Coin', () => (
+    <div>
+      <h3>Coin</h3>
+      <Coin />
+      <h2>small</h2>
+      <Coin fontSize="small" />
+      <h2>large</h2>
+      <Coin fontSize="large" />
+    </div>
+  ))
+  .add('OneColorCoin', () => (
+    <div>
+      <h3>OneColorCoin</h3>
+      <OneColorCoin />
+      <h2>small</h2>
+      <OneColorCoin fontSize="small" />
+      <h2>large</h2>
+      <OneColorCoin fontSize="large" />
+    </div>
+  ))
   .add('BarChart', () => (
     <div>
       <h3>BarChart</h3>
@@ -169,6 +192,16 @@ storiesOf('components | Market', module)
       <Activity fontSize="small" />
       <h2>large</h2>
       <Activity fontSize="large" />
+    </div>
+  ))
+  .add('Shop', () => (
+    <div>
+      <h3>Shop</h3>
+      <Shop />
+      <h2>small</h2>
+      <Shop fontSize="small" />
+      <h2>large</h2>
+      <Shop fontSize="large" />
     </div>
   ))
   .add('ShoppingCart', () => (
