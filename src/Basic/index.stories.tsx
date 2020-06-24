@@ -31,7 +31,7 @@ import Minus from './Minus';
 import MoreHorizontal from './MoreHorizontal';
 import MoreVertical from './MoreVertical';
 import Plus from './Plus';
-import Replay from './Replay';
+import Reply from './Reply';
 import Search from './Search';
 import Send from './Send';
 import Setting from './Setting';
@@ -151,14 +151,14 @@ storiesOf('components | Basic', module)
       <Clock fontSize="large" />
     </div>
   ))
-  .add('Replay', () => (
+  .add('Reply', () => (
     <div>
-      <h3>Replay</h3>
-      <Replay />
+      <h3>Reply</h3>
+      <Reply />
       <h2>small</h2>
-      <Replay fontSize="small" />
+      <Reply fontSize="small" />
       <h2>large</h2>
-      <Replay fontSize="large" />
+      <Reply fontSize="large" />
     </div>
   ))
   .add('Setting', () => (

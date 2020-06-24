@@ -27,7 +27,7 @@ export { default as MessageSquare } from './MessageSquare';
 export { default as Minus } from './Minus';
 export { default as MoreVertical } from './MoreVertical';
 export { default as Plus } from './Plus';
-export { default as Replay } from './Replay';
+export { default as Reply } from './Reply';
 export { default as Search } from './Search';
 export { default as Send } from './Send';
 export { default as Setting } from './Setting';
