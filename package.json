@@ -1,12 +1,12 @@
 {
   "name": "@gaudiy/icons",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": "icons repository for https://gaudiy.com/",
   "main": "./index.js",
   "module": "./esm/index.js",
   "typings": "./index.d.ts",
   "engines": {
-    "node": "12.x"
+    "node": "10.x"
   },
   "publishConfig": {
     "access": "public"
