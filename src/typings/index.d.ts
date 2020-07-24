@@ -11,7 +11,7 @@ export interface SvgIconProps extends React.SVGProps<SVGSVGElement> {
     | 'success'
     | 'disabled'
     | 'error';
-  fontSize?: 'default' | 'small' | 'large';
+  fontSize?:  'small' | 'medium' |'large';
 }
 
 export default function SvgIcon(props: SvgIconProps): JSX.Element;

@@ -52,7 +52,7 @@ const SvgIcon = ({
   children,
   className,
   viewBox = '0 0 24 24',
-  fontSize = 'default',
+  fontSize = 'medium',
   color = 'default',
   ...other
 }: SvgIconProps) => {
@@ -64,7 +64,7 @@ const SvgIcon = ({
         classes.root,
         {
           // @ts-ignore
-          [classes[`fontSize${capitalize(fontSize)}`]]: fontSize !== 'default',
+          [classes[`fontSize${capitalize(fontSize)}`]]: fontSize !== 'medium',
           // @ts-ignore
           [classes[`color${capitalize(color)}`]]: color !== 'default',
         },
