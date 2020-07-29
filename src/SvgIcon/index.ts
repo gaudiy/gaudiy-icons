@@ -1,3 +1,2 @@
-import Presenter from './Presenter';
-
-export default Presenter;
+export { default } from './Presenter';
+export * from './Presenter';

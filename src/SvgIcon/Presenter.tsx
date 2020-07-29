@@ -1,7 +1,20 @@
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import * as React from 'react';
-import { SvgIconProps } from '../typings';
+
+export interface SvgIconProps extends React.SVGProps<SVGSVGElement> {
+  color?:
+    | 'default'
+    | 'inherit'
+    | 'primary'
+    | 'secondary'
+    | 'textPrimary'
+    | 'textSecondary'
+    | 'success'
+    | 'disabled'
+    | 'error';
+  fontSize?: 'small' | 'medium' | 'large';
+}
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -52,7 +65,7 @@ const SvgIcon = ({
   children,
   className,
   viewBox = '0 0 24 24',
-  fontSize = 'default',
+  fontSize = 'medium',
   color = 'default',
   ...other
 }: SvgIconProps) => {
@@ -64,7 +77,7 @@ const SvgIcon = ({
         classes.root,
         {
           // @ts-ignore
-          [classes[`fontSize${capitalize(fontSize)}`]]: fontSize !== 'default',
+          [classes[`fontSize${capitalize(fontSize)}`]]: fontSize !== 'medium',
           // @ts-ignore
           [classes[`color${capitalize(color)}`]]: color !== 'default',
         },
@@ -80,4 +93,4 @@ const SvgIcon = ({
   );
 };
 
-export default React.memo(SvgIcon);
+export default SvgIcon;
