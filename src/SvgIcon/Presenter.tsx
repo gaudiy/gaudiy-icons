@@ -13,7 +13,7 @@ export interface SvgIconProps extends React.SVGProps<SVGSVGElement> {
     | 'success'
     | 'disabled'
     | 'error';
-  fontSize?: 'small' | 'medium' | 'large';
+  fontSize?: 'xsmall' | 'small' | 'medium' | 'large';
 }
 
 const useStyles = makeStyles((theme) => ({
@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
     userSelect: 'none',
     fontSize: '24px',
     strokeWidth: '1.5px',
+  },
+  fontSizeXsmall: {
+    fontSize: '16px',
   },
   fontSizeSmall: {
     fontSize: '20px',
