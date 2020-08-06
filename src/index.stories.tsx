@@ -31,4 +31,16 @@ storiesOf('components | Usecases', module)
       <h2>Thick x2</h2>
       <Home color="inherit" style={{ strokeWidth: 3 }} />
     </div>
+  ))
+  .add('FontSize', () => (
+    <div>
+      <h3>Xsmall</h3>
+      <Home color="inherit" fontSize="xsmall" />
+      <h2>Small</h2>
+      <Home color="inherit" fontSize="small" />
+      <h2>Medium</h2>
+      <Home color="inherit" fontSize="medium" />
+      <h2>Large</h2>
+      <Home color="inherit" fontSize="large" />
+    </div>
   ));
