@@ -1,13 +1,4 @@
 import * as React from 'react';
 import createSvgIcon from '../utils/createSvgIcon';
 
-export default createSvgIcon(
-  <path
-    fill-rule="evenodd"
-    clip-rule="evenodd"
-    d="M5 3L19 12L5 21V3V3Z"
-    stroke="currentColor"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-);
+export default createSvgIcon(<path d="M5 3L19 12L5 21V3V3Z" stroke="currentColor" />);
