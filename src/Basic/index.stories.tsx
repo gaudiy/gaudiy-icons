@@ -42,6 +42,7 @@ import ThumbsUp from './ThumbsUp';
 import Trash from './Trash';
 import Upload from './Upload';
 import X from './X';
+import Images from './Images'
 
 storiesOf('components | Basic', module)
   .addDecorator((story) => <div style={{ color: '#FFFFFF' }}>{story()}</div>)
@@ -83,6 +84,16 @@ storiesOf('components | Basic', module)
       <Image fontSize="small" />
       <h2>large</h2>
       <Image fontSize="large" />
+    </div>
+  ))
+  .add('Images', () => (
+    <div>
+      <h3>Images</h3>
+      <Images />
+      <h2>small</h2>
+      <Images fontSize="small" />
+      <h2>large</h2>
+      <Images fontSize="large" />
     </div>
   ))
   .add('Camera', () => (
