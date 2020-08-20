@@ -42,7 +42,7 @@ import ThumbsUp from './ThumbsUp';
 import Trash from './Trash';
 import Upload from './Upload';
 import X from './X';
-import Images from './Images'
+import Images from './Images';
 
 storiesOf('components | Basic', module)
   .addDecorator((story) => <div style={{ color: '#FFFFFF' }}>{story()}</div>)
