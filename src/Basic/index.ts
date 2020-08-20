@@ -38,3 +38,4 @@ export { default as ThumbsUp } from './ThumbsUp';
 export { default as Trash } from './Trash';
 export { default as Upload } from './Upload';
 export { default as X } from './X';
+export { default as Images } from './Images';
