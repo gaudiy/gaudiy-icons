@@ -46,22 +46,6 @@ import Images from './Images';
 
 storiesOf('components | Basic', module)
   .addDecorator((story) => <div style={{ color: '#FFFFFF' }}>{story()}</div>)
-  .add('Colors', () => (
-    <div>
-      <h3>Primary</h3>
-      <Home color="primary" />
-      <h2>Secondary</h2>
-      <Home color="secondary" />
-      <h2>Success</h2>
-      <Home color="success" />
-      <h2>Disabled</h2>
-      <Home color="disabled" />
-      <h2>Error</h2>
-      <Home color="error" />
-      <h2>Inherit</h2>
-      <Home color="inherit" />
-    </div>
-  ))
   .add('Home', () => (
     <div>
       <h3>Home</h3>

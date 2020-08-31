@@ -3,11 +3,11 @@ import createSvgIcon from '../utils/createSvgIcon';
 
 export default createSvgIcon(
   <path
-    fill-rule="evenodd"
-    clip-rule="evenodd"
+    fillRule="evenodd"
+    clipRule="evenodd"
     d="M5 3L19 12L5 21V3V3Z"
     stroke="currentColor"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeLinecap="round"
+    strokeLinejoin="round"
   />
 );

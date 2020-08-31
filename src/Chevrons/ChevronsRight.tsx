@@ -3,7 +3,7 @@ import createSvgIcon from '../utils/createSvgIcon';
 
 export default createSvgIcon(
   <>
-    <path d="M13 17L18 12L13 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-    <path d="M6 17L11 12L6 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M13 17L18 12L13 7" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M6 17L11 12L6 7" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
   </>
 );

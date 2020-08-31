@@ -8,7 +8,6 @@ export default createSvgIcon(
       clipRule="evenodd"
       d="M18 3H22V21H18V3Z"
       stroke="currentColor"
-      strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -17,7 +16,6 @@ export default createSvgIcon(
       clipRule="evenodd"
       d="M10 8H14V21H10V8Z"
       stroke="currentColor"
-      strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -26,7 +24,6 @@ export default createSvgIcon(
       clipRule="evenodd"
       d="M2 13H6V21H2V13Z"
       stroke="currentColor"
-      strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
