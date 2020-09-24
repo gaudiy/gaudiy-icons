@@ -15,6 +15,7 @@ export { default as PointText } from './PointText';
 export { default as Shop } from './Shop';
 export { default as ShoppingBag } from './ShoppingBag';
 export { default as ShoppingCart } from './ShoppingCart';
+export { default as Trophy } from './Trophy';
 export { default as Wallet } from './Wallet';
 export { default as WalletJpy } from './WalletJpy';
 export { default as WithdrawEth } from './WithdrawEth';

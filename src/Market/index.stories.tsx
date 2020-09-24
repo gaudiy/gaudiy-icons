@@ -17,6 +17,7 @@ import PointText from './PointText';
 import Shop from './Shop';
 import ShoppingBag from './ShoppingBag';
 import ShoppingCart from './ShoppingCart';
+import Trophy from './Trophy';
 import Wallet from './Wallet';
 import WalletJpy from './WalletJpy';
 import WithdrawEth from './WithdrawEth';
@@ -232,5 +233,15 @@ storiesOf('components | Market', module)
       <ShoppingBag fontSize="small" />
       <h2>large</h2>
       <ShoppingBag fontSize="large" />
+    </div>
+  ))
+  .add('Trophy', () => (
+    <div>
+      <h3>Trophy</h3>
+      <Trophy />
+      <h2>small</h2>
+      <Trophy fontSize="small" />
+      <h2>large</h2>
+      <Trophy fontSize="large" />
     </div>
   ));
