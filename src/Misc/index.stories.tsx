@@ -30,6 +30,7 @@ import Triangle from './Triangle';
 import Umbrella from './Umbrella';
 import Wifi from './Wifi';
 import Zap from './Zap';
+import Trophy from './Trophy';
 
 storiesOf('components | Misc', module)
   .addDecorator((story) => <div style={{ color: '#FFFFFF' }}>{story()}</div>)
@@ -304,6 +305,16 @@ storiesOf('components | Misc', module)
       <Triangle fontSize="small" />
       <h2>large</h2>
       <Triangle fontSize="large" />
+    </div>
+  ))
+  .add('Trophy', () => (
+    <div>
+      <h3>Trophy</h3>
+      <Trophy />
+      <h2>small</h2>
+      <Trophy fontSize="small" />
+      <h2>large</h2>
+      <Trophy fontSize="large" />
     </div>
   ))
   .add('Umbrella', () => (

@@ -28,3 +28,4 @@ export { default as Triangle } from './Triangle';
 export { default as Umbrella } from './Umbrella';
 export { default as Wifi } from './Wifi';
 export { default as Zap } from './Zap';
+export { default as Trophy } from './Trophy';
